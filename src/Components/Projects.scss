@@ -11,8 +11,9 @@
   }
   
   .project-section {
-    height: 65vh;
-    width: 100%;
+    min-height: 65vh;
+    width: 90%;
+    margin: auto;
   }
   
   .talentboard-gif {
@@ -83,15 +84,29 @@
   .mobile-buttons {
     visibility: hidden;
   }
-  
+
   @media (max-width: 767px) {
     .projects-wrapper {
       margin-top: 100px;
+      width: 87.5%;
     }
-  
+    
+    .project-section {
+      margin-top: 150px;
+    }
+
+    .project-name {
+      margin: 10px 0px 20px 0px;
+      line-height: 1;
+    }
+
+    .project-type {
+      margin-left: 0px;
+    }
     .talentboard-gif {
       width: 80%;
       margin: 0px;
+      margin-top: 50px;
     }
   
     .not-mobile {
@@ -104,84 +119,78 @@
     hr {
       visibility: collapse !important;
     }
+
   
-    .project-description p {
-      margin-left: -28px;
-    }
+    // #flex-1 {
+    //   display: flex;
+    //   /* Optional, if you want the DIVs 100% width: */
+    //   flex-direction: column;
+    // }
   
-    #flex-1 {
-      display: flex;
-      /* Optional, if you want the DIVs 100% width: */
-      flex-direction: column;
-    }
+    // #flex-1 > #a {
+    //   order: 2;
+    //   margin-top: -15px;
+    // }
+    // #flex-1 > #b {
+    //   order: 1;
+    //   margin-top: 0px;
+    // }
+    // #flex-1 > #c {
+    //   order: 3;
+    //   margin-top: 40px;
+    //   margin-bottom: 500px;
+    // }
   
-    #flex-1 > #a {
-      order: 2;
-      margin-top: -15px;
-    }
-    #flex-1 > #b {
-      order: 1;
-      margin-top: 0px;
-    }
-    #flex-1 > #c {
-      order: 3;
-      margin-top: 40px;
-      margin-bottom: 500px;
-    }
+    // #flex-2 {
+    //   display: flex;
+    //   /* Optional, if you want the DIVs 100% width: */
+    //   flex-direction: column;
+    // }
   
-    #flex-2 {
-      display: flex;
-      /* Optional, if you want the DIVs 100% width: */
-      flex-direction: column;
-    }
+    // #flex-2 > #a {
+    //   order: 1;
+    //   margin-top: 150px;
+    // }
+    // #flex-2 > #b {
+    //   order: 2;
+    //   width: 100%;
+    //   padding: 10%;
+    //   margin-top: -65px;
+    //   margin-bottom: 10px; 
+    // }
+    // #flex-2 > #c {
+    //   order: 3;
+    //   margin-top: -10px;
+    // }
   
-    #flex-2 > #a {
-      order: 1;
-      margin-top: 150px;
-    }
-    #flex-2 > #b {
-      order: 2;
-      width: 100%;
-      padding: 10%;
-      margin-top: -65px;
-      margin-bottom: 10px; 
-    }
-    #flex-2 > #c {
-      order: 3;
-      margin-top: -10px;
-    }
+    // #flex-3 {
+    //   display: flex;
+    //   /* Optional, if you want the DIVs 100% width: */
+    //   flex-direction: column;
+    // }
   
-    #flex-3 {
-      display: flex;
-      /* Optional, if you want the DIVs 100% width: */
-      flex-direction: column;
-    }
-  
-    #flex-3 > #a {
-      order: 2;
-      margin-top: -170px;
-      width: 85%;
-    }
-    #flex-3> #b {
-      order: 1;
-      // width: 100%;
-      // padding: 10%;
-      margin-top: 120px;
-      // margin-bottom: 10px; 
-    }
-    #flex-3 > #c {
-      order: 3;
-      margin-top: 20px;
-    }
+    // #flex-3 > #a {
+    //   order: 2;
+    //   margin-top: -170px;
+    //   width: 85%;
+    // }
+    // #flex-3> #b {
+    //   order: 1;
+    //   // width: 100%;
+    //   // padding: 10%;
+    //   margin-top: 120px;
+    //   // margin-bottom: 10px; 
+    // }
+    // #flex-3 > #c {
+    //   order: 3;
+    //   margin-top: 20px;
+    // }
   
     .mobile-buttons{
       visibility: unset;
       margin-top: 10px;
     }
-  
-    .third {
-      margin-top: 110%;
-    }
+
   
     .project-description {
       padding-right: 30px;

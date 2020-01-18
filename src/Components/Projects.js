@@ -19,17 +19,17 @@ export class Projects extends Component {
             <div  className="projects-wrapper" style={{fontFamily:'SFProReg'}}>
                 <div className="container">
                     <div className="row">
-                        <div className="col projects-title" style={{fontFamily:'SFProBold'}}>
+                        <div className="col projects-title " style={{fontFamily:'SFProBold'}}>
                                 Projects
                         </div>
                     </div>
                 </div>
                 <div className="project-section">
-                    <div id="flex-1" className="row">
-                        <div id="a" className="col-md-6 logo-box" style={{justifyContent:'center'}}>
+                    <div className="row flex-column-reverse flex-md-row">
+                        <div  className="col-md-6  logo-box" style={{justifyContent:'center'}}>
                             <img src="assets/talentboard.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
                         </div>
-                        <div id="b" className="neo-shadow col-md-6 project-description" >
+                        <div  className="neo-shadow col-md-6  project-description" >
                             <div className="project-type" >
                                 Web App
                             </div>
@@ -37,55 +37,36 @@ export class Projects extends Component {
                                 Price Watch
                             </div>
                             <div className="row">
-                                <div className="col-3 not-mobile">
+                                <div className="col-md-1 col-lg-3 not-mobile">
                                     <hr />
                                 </div>
-                                <div className="col-7" style={{fontFamily:'SFProLight'}}>
+                                <div className="col-md-11 col-lg-7" style={{fontFamily:'SFProLight'}}>
                                     <p style={{fontSize:'20px'}}>
-                                    alentboard is an applicant tracking tool for HR and hiring managers. Talentboard's simple drag & drop interface introduces a unique, visual approach to managing applicants through the hiring process. 
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     </p>
 
                                     <Button
-                                    className="btn btn-dark"
                                     style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<GitHubIcon/>}
                                 >GitHub</Button>
                                 <Button
-                                     className="btn btn-dark"
                                     style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
                                     variant="contained"
                                     color="primary"
-                                    endIcon={<ArrowForwardIcon/>}
-                                >Project</Button>
+                                    endIcon={<ArrowForwardIcon/>}>Project</Button>
 
                                 </div>
                             </div>
-                        </div>
-                        <div id="c" className="col-md-6 logo-box">
-                        <Button className="btn btn-dark mobile-buttons"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
-                                    variant="contained"
-                                    color="primary"
-                                    endIcon={<GitHubIcon/>}
-                                    href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s"
-                                >GitHub</Button>
-                                <Button className="btn btn-dark mobile-buttons"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
-                                    variant="contained"
-                                    href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s"
-                                    color="primary"
-                                    endIcon={<ArrowForwardIcon/>}
-                                >Project</Button>
-
                         </div>
                     </div>
                 </div>
 
                 <div className="project-section">
-                    <div id="flex-2" className="row">
-                        <div id="a" className="neo-shadow col-md-6 project-description">
+                    <div className="row">
+                        <div className="neo-shadow col-md-6 project-description">
                             <div className="project-type">
                                 Web App
                             </div>
@@ -93,59 +74,44 @@ export class Projects extends Component {
                                 DevKit.
                             </div>
                             <div className="row">
-                                <div className="col-3">
+                                <div className="col-md-1 col-lg-3 not-mobile">
                                     <hr />
                                 </div>
-                                <div className="col-7" style={{fontFamily:'SFProLight'}}>
+                                <div className="col-md-11 col-lg-7" style={{fontFamily:'SFProLight'}}>
                                     <p style={{fontSize:'20px'}}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     </p>
+                                    <a href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s">
                                     <Button
-                                    className="btn btn-dark"
+                                    
                                     style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<GitHubIcon/>}
                                 >GitHub</Button>
                                 <Button
-                                     className="btn btn-dark"
+                                     
                                     style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<ArrowForwardIcon/>}
                                 >Project</Button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="b" className="col-md-6 logo-box">
+                        <div  className="col-md-6 logo-box">
                             <img src="assets/talentboard.gif" className='talentboard-gif' alt="loading..." />
                         </div>
                         
-
-                        <div id="c" className="col-md-6 logo-box">
-                        <Button className="btn btn-dark mobile-buttons"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
-                                    variant="contained"
-                                    color="primary"
-                                    endIcon={<GitHubIcon/>}
-                                    href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s"
-                                >GitHub</Button>
-                                <Button className="btn btn-dark mobile-buttons"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
-                                    variant="contained"
-                                    href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s"
-                                    color="primary"
-                                    endIcon={<ArrowForwardIcon/>}
-                                >Project</Button>
-                        </div>
 
                     </div>
                 </div>
 
                 <div className="project-section third">   
-                    <div id="flex-3" className="row">
+                    <div id="flex-1" className="row flex-column-reverse flex-md-row">
                         <div id="a" className="col-md-6 logo-box" style={{justifyContent:'center'}}>
                             <img src="assets/talentboard.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
                         </div>
@@ -158,23 +124,23 @@ export class Projects extends Component {
                                 Sumobot Competiton
                             </div>
                             <div className="row">
-                                <div className="col-3">
+                                <div className="col-md-1 col-lg-3 not-mobile">
                                     <hr />
                                 </div>
-                                <div className="col-7" style={{fontFamily:'SFProLight'}}>
+                                <div className="col-md-11 col-lg-7" style={{fontFamily:'SFProLight'}}>
                                     <p style={{fontSize:'20px'}}>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.<a href="https://github.com/AmarJ/NN">multi-layer perceptron</a>. 
                                     </p>
                                     <Button
-                                    className="btn btn-dark"
+                                    
                                     style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<GitHubIcon/>}
                                 >GitHub</Button>
                                 <Button
-                                     className="btn btn-dark"
+                                     
                                     style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
                                     variant="contained"
                                     color="primary"
@@ -184,22 +150,7 @@ export class Projects extends Component {
                             </div>
                         </div>
 
-                        <div id="c" className="col-md-6 logo-box">
-                        <Button className="btn btn-dark mobile-buttons"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
-                                    variant="contained"
-                                    color="primary"
-                                    endIcon={<GitHubIcon/>}
-                                    href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s"
-                                >GitHub</Button>
-                                <Button className="btn btn-dark mobile-buttons"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
-                                    variant="contained"
-                                    href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s"
-                                    color="primary"
-                                    endIcon={<ArrowForwardIcon/>}
-                                >Project</Button>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
