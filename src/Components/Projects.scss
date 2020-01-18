@@ -12,8 +12,7 @@
   
   .project-section {
     height: 65vh;
-    width: 90%;
-    margin: auto;
+    width: 100%;
   }
   
   .talentboard-gif {
@@ -86,7 +85,6 @@
   }
   
   @media (max-width: 767px) {
-
     .projects-wrapper {
       margin-top: 100px;
     }
@@ -188,7 +186,6 @@
     .project-description {
       padding-right: 30px;
     }
-  
   
   }
 
