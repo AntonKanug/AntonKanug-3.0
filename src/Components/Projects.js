@@ -101,7 +101,7 @@ export class Projects extends Component {
                         </div>
 
                         <div  className="col-md-6 gif logo-box">
-                        <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
+                        <img src="assets/DevKit.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
                         </div>
                         
 
