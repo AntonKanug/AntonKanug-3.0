@@ -1,0 +1,33 @@
+.neo-shadow1 {
+    box-shadow:   12px 12px 15px 0 rgba(0, 0, 0, 0.1), -12px -12px 30px 0  rgba(255, 255, 255, 1 );
+    background:#f5f5f5;
+    border-radius:30px; 
+    padding:40px;
+    max-width: 360px;
+    margin: 20px;
+  }
+
+
+  .project-type-min {
+    font-size: 24px;
+    color: #0b3ffa;
+    font-weight: 600;
+    font-family: SfProBold;
+    margin-bottom: -15px;
+  }
+  
+  .project-name-min {
+    font-size: 44px;
+    color: #3c3b48;
+    font-weight: 600;
+    font-family: SfProBold;
+  }
+
+  .project-title-min {
+    font-size: 38px;
+    color: #3c3b48;
+    font-weight: 600;
+    font-family: SfProBold;
+    margin-left: 30px;
+    margin-bottom: 1%;
+  }
