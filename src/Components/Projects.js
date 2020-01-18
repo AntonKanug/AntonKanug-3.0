@@ -26,8 +26,8 @@ export class Projects extends Component {
                 </div>
                 <div className="project-section">
                     <div className="row flex-column-reverse flex-md-row">
-                        <div  className="col-md-6  logo-box" style={{justifyContent:'center'}}>
-                            <img src="assets/talentboard.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
+                        <div  className="col-md-6  gif logo-box" style={{justifyContent:'center'}}>
+                            <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
                         </div>
                         <div  className="neo-shadow col-md-6  project-description" >
                             <div className="project-type" >
@@ -47,13 +47,13 @@ export class Projects extends Component {
                                     </p>
 
                                     <Button
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
+                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 30px 7px 30px', textTransform:'none', outline:0}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<GitHubIcon/>}
                                 >GitHub</Button>
                                 <Button
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
+                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 30px 7px 30px', marginLeft:'10px', textTransform:'none', outline:0}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<ArrowForwardIcon/>}>Project</Button>
@@ -82,28 +82,26 @@ export class Projects extends Component {
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     </p>
-                                    <a href="https://www.youtube.com/watch?v=oGJr5N2lgsQ&t=2s">
                                     <Button
                                     
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
+                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 30px 7px 30px', textTransform:'none', outline:0}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<GitHubIcon/>}
                                 >GitHub</Button>
                                 <Button
                                      
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
+                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 30px 7px 30px', marginLeft:'10px', textTransform:'none', outline:0}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<ArrowForwardIcon/>}
                                 >Project</Button>
-                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div  className="col-md-6 logo-box">
-                            <img src="assets/talentboard.gif" className='talentboard-gif' alt="loading..." />
+                        <div  className="col-md-6 gif logo-box">
+                        <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
                         </div>
                         
 
@@ -112,8 +110,8 @@ export class Projects extends Component {
 
                 <div className="project-section third">   
                     <div id="flex-1" className="row flex-column-reverse flex-md-row">
-                        <div id="a" className="col-md-6 logo-box" style={{justifyContent:'center'}}>
-                            <img src="assets/talentboard.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
+                        <div id="a" className="col-md-6 gif logo-box" style={{justifyContent:'center'}}>
+                            <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
                         </div>
 
                         <div id="b" className="col-md-6 project-description neo-shadow">
@@ -134,14 +132,14 @@ export class Projects extends Component {
                                     </p>
                                     <Button
                                     
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', width:'138px'}}
+                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 30px 7px 30px', textTransform:'none', outline:0}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<GitHubIcon/>}
                                 >GitHub</Button>
                                 <Button
                                      
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 20px 7px 20px', marginLeft:'10px'}}
+                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', padding:'7px 30px 7px 30px', marginLeft:'10px', textTransform:'none', outline:0}}
                                     variant="contained"
                                     color="primary"
                                     endIcon={<ArrowForwardIcon/>}
