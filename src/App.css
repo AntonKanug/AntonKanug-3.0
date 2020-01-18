@@ -2,6 +2,40 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: SFProThin;
+  src: url(fonts/SF-Pro-Display-Thin.ttf);
+}
+@font-face {
+  font-family: SFProSB;
+  src: url(fonts/SF-Pro-Display-Semibold.ttf);
+}
+@font-face {
+  font-family: SFProReg;
+  src: url(fonts/SF-Pro-Display-Regular.ttf);
+}
+@font-face {
+  font-family: SFProMed;
+  src: url(fonts/SF-Pro-Display-Medium.ttf);
+}
+@font-face {
+  font-family: SFProLight;
+  src: url(fonts/SF-Pro-Display-Light.ttf);
+}
+@font-face {
+  font-family: SFProHeavy;
+  src: url(fonts/SF-Pro-Display-Heavy.ttf);
+}
+@font-face {
+  font-family: SFProBold;
+  src: url(fonts/SF-Pro-Display-Bold.ttf);
+}
+@font-face {
+  font-family: SFProBlack;
+  src: url(fonts/SF-Pro-Display-Black.ttf);
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

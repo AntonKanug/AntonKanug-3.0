@@ -1,0 +1,97 @@
+
+  
+  .main-wrapper {
+    width: 80.75%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .project-wrapper {
+    width: 80.75%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  @media (max-width:800px){
+    .project-wrapper {
+      width: 100%;
+    }
+  }
+  
+  .banner-content {
+    color: #3c3b48;
+    text-align: left;
+    margin-top: 4rem;
+    margin-bottom: 10px;
+    // background: blue;
+  }
+  
+  .banner-content h1 {
+    font-size: 42px;
+    color: #3c3b48;
+    font-weight: 600;
+  }
+  
+  .banner-content p {
+    font-size: 22px;
+    color: #3c3b48;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 800px) {
+    .banner-content {
+      margin: 0px;
+    }
+  
+    .banner-content h1 {
+      font-size: 28px;
+      color: #3c3b48;
+      font-weight: 600;
+    }
+  
+    .banner-content p {
+      font-size: 18px;
+      margin-top: 1rem;
+
+    }
+  
+    .btn {
+      visibility: hidden;
+    }
+  
+    .me {
+      margin: 0px;
+    }
+  }
+  
+  .mail-icon {
+    margin-left: 5px;
+  }
+  
+  .me {
+    margin: 10%;
+    position: relative;
+    width: 80%;
+  }
+  
+  .dark-blue {
+    color: #2855ff;
+  }
+  
+  .dark-blue:hover {
+    background-color: #2855ff;
+  }
+  
+  #main {
+    transition: margin-top 0.5s;
+  }
+  
+  b,
+  strong {
+    font-weight: bold !important;
+  }
+  
+  .cont{
+    box-shadow:   10px 10px 10px 0 rgba(0, 0, 0, 0.1),
+      -10px -10px 10px 0  rgba(255, 255, 255, 1 );
+  }
