@@ -3,6 +3,8 @@ import './Intro.scss';
 import NavBar from './Navbar';
 import Projects from './Projects'
 import LinearProgress from '@material-ui/core/LinearProgress';
+import Snackbar from './Snackbar'
+
 
 require('bootstrap')
 export class Intro extends Component {
@@ -19,9 +21,7 @@ export class Intro extends Component {
 
         return (
             <div>
-                 <LinearProgress style={{display:this.state.open, height:5}} />
-            <div id="main" className="main-wrapper">
-                <NavBar />
+                 <div  id="main" className="main-wrapper">
             <div className="container"  style={{marginTop:'50px'}}>
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-sm-6 col-xs-6">
@@ -72,9 +72,7 @@ export class Intro extends Component {
                 </div>
             </div>
         </div>
-        <div id="main" className="project-wrapper" >
-        <Projects />
-        </div>
+            <Snackbar/>
         </div>
         )
     }

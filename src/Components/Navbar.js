@@ -31,7 +31,7 @@ const Anchors = () => {
     return (anchorsArr.map(item => { return (<a key={item} href={`#${item}`}>{item}</a>) }));
 }
 
-export default class Header extends Component {
+export class Navbar extends Component {
     state = {
         showMobileMenu: false,
         showButton: true,
@@ -86,3 +86,5 @@ export default class Header extends Component {
         );
     }
 }
+
+export default Navbar
