@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import './Projects.scss';
-
+import MinProjects from './MinProjects'
 export class Projects extends Component {
     render() {
 
@@ -111,7 +111,7 @@ export class Projects extends Component {
                 <div className="project-section third">   
                     <div id="flex-1" className="row flex-column-reverse flex-md-row">
                         <div id="a" className="col-md-6 gif logo-box" style={{justifyContent:'center'}}>
-                            <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
+                            <img src="assets/sumo-bg.png" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px', maxHeight:'450px', width:'auto'}}/>
                         </div>
 
                         <div id="b" className="col-md-6 project-description neo-shadow">
@@ -151,6 +151,7 @@ export class Projects extends Component {
                        
                     </div>
                 </div>
+                <MinProjects/>
             </div>
         )
     }
