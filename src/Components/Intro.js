@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import './Intro.scss';
-import NavBar from './Navbar';
-import Projects from './Projects'
-import LinearProgress from '@material-ui/core/LinearProgress';
 import Snackbar from './Snackbar'
 
 

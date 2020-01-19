@@ -63,6 +63,17 @@
       margin: 0px;
     }
   }
+
+
+  @media (max-width:500px){
+    .main-wrapper {
+      width: 90%;
+    }
+
+    .project-wrapper{
+      width: 90%;
+    }
+  }
   
   .mail-icon {
     margin-left: 5px;
