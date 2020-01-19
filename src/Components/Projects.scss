@@ -88,7 +88,7 @@
   @media (max-width: 767px) {
     .projects-wrapper {
       margin-top: 100px;
-      width: 87.5%;
+      width: 91%;
     }
     
     .project-section {
@@ -204,4 +204,41 @@
     margin-top: 0px;  
     border-radius:30px; 
     padding:40px;
+  }
+    
+  .btn-mtl{
+    padding: 7px 30px 7px 30px;
+  }
+
+  @media (max-width:500px){
+    .project-section {
+      width: 100%;
+    }
+    
+    .talentboard-gif {
+      width: 100%;
+    }
+
+    .btn-mtl{
+      padding: 7px 10px 7px 10px;
+    }
+  }
+
+
+  .social-media-icon{
+    transition: 0.3s;
+
+  }
+  .social-media-icon:hover{
+    transform: scale(1.25);
+  } 
+  
+  .media-icon{
+    transition: 0.3s;
+    margin: 4.25px;
+    margin-top: 0px;
+  }
+  
+  .media-icon:hover{
+    transform: scale(1.25);
   }
