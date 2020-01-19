@@ -16,25 +16,25 @@ export class Footer extends Component {
                             <div className="col-md-6 offset-md-3 social">
                                 <div className="container">
                                     <div className="row justify-content-md-center">
-                                        <a className="no-underline" href="https://www.instagram.com/amar_jasar/">
+                                        <a className="no-underline" href="">
                                             <div className="col-md-auto name">
                                                 <i className="fab fa-instagram social-icon"></i>
                                                 Intagram
                                             </div>
                                         </a>
-                                        <a className="no-underline" href="https://www.linkedin.com/in/amarjasarbasic/">
+                                        <a className="no-underline" href="https://www.linkedin.com/in/antonkanug/">
                                             <div className="col-md-auto name">
                                                 <i className="fab fa-linkedin social-icon"></i>
                                                 LinkedIn
                                             </div>
                                         </a>
-                                        <a className="no-underline " href="https://github.com/AmarJ">
+                                        <a className="no-underline " href="https://github.com/antonkanug">
                                             <div className="col-md-auto name">
                                                 <i className="fab fa-github social-icon"></i>
                                                 Github
                                             </div>
                                         </a>
-                                        <a className="no-underline in-line" href="mailto:amarjasarbasic@gmail.com">
+                                        <a className="no-underline in-line" href="mailto:antondilon@gmail.com">
                                             <div className="col-md-auto name">
                                                 <i className="far fa-envelope social-icon"></i>
                                                 Email
@@ -50,22 +50,22 @@ export class Footer extends Component {
                             <div className="col-md-6 offset-md-3 social">
                                 <div className="container">
                                     <div className="row justify-content-md-center">
-                                        <a className="no-underline" href="https://www.instagram.com/amar_jasar/">
+                                        <a className="no-underline" href="">
                                             <div className="col-md-auto name">
                                                 <i className="fab fa-instagram social-icon"></i>
                                             </div>
                                         </a>
-                                        <a className="no-underline" href="https://www.linkedin.com/in/amarjasarbasic/">
+                                        <a className="no-underline" href="https://www.linkedin.com/in/antonkanug/">
                                             <div className="col-md-auto name">
                                                 <i className="fab fa-linkedin social-icon"></i>
                                             </div>
                                         </a>
-                                        <a className="no-underline " href="https://github.com/AmarJ">
+                                        <a className="no-underline " href="https://github.com/antonkanug">
                                             <div className="col-md-auto name">
                                                 <i className="fab fa-github social-icon"></i>
                                             </div>
                                         </a>
-                                        <a className="no-underline" href="mailto:amarjasarbasic@email.com">
+                                        <a className="no-underline" href="mailto:antondilon@gmail.com">
                                             <div className="col-md-auto name">
                                                 <i className="far fa-envelope social-icon"></i>
                                             </div>
