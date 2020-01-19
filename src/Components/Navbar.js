@@ -60,8 +60,8 @@ export class Navbar extends Component {
                                 <span className="full-name">
                                     <h1 style={{fontFamily:'SFProBold', letterSpacing:'0.7px'}}>Anton Kanugalawattage</h1>
                                 </span>
-                                <span className="short-name">
-                                    <h1>Anton</h1>
+                                <span className="short-name" >
+                                    <h1 style={{fontFamily:'SFProBold', letterSpacing:'0.7px'}}>Anton K</h1>
                                 </span>
                             </div>
                         </div>
