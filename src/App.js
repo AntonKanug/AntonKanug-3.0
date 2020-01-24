@@ -26,7 +26,7 @@ render() {
     this.setState({
         open:'none'
         });
-    }, 2000);
+    }, 4000);
 
     return (
     <div style={{fontFamily:'SFPro'}}>

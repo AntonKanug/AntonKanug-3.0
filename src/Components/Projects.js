@@ -3,7 +3,11 @@ import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import './Projects.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import MinProjects from './MinProjects'
+AOS.init();
+
 export class Projects extends Component {
     render() {
 
@@ -22,7 +26,7 @@ export class Projects extends Component {
                         <div className="col projects-title " style={{fontFamily:'SFProBold'}}>Projects</div>
                     </div>
                 </div>
-                <div className="project-section">
+                <div className="project-section" >
                     <div className="row flex-column-reverse flex-md-row">
                         <div  className="col-md-6  gif logo-box" style={{justifyContent:'center'}}>
                             <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
@@ -79,7 +83,7 @@ export class Projects extends Component {
                     </div>
                 </div>
 
-                <div className="project-section">
+                <div className="project-section" >
                     <div className="row">
                         <div className="neo-shadow col-md-6 project-description">
                             <div className="project-type">Web App</div>
@@ -137,7 +141,7 @@ export class Projects extends Component {
                     </div>
                 </div>
 
-                <div className="project-section third">   
+                <div className="project-section third" >   
                     <div className="row flex-column-reverse flex-md-row">
                     <div  className="col-md-6  gif logo-box" style={{justifyContent:'center'}}>
                             <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
