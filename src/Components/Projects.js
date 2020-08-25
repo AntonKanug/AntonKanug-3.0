@@ -1,200 +1,168 @@
-import React, { Component } from 'react'
-import Button from '@material-ui/core/Button';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import './Projects.scss';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import MinProjects from './MinProjects'
+import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import "./Projects.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import MinProjects from "./MinProjects";
 AOS.init();
 
 export class Projects extends Component {
-    render() {
+  render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
 
-        var settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        };
-
-        return (
-            <div  className="projects-wrapper" style={{fontFamily:'SFProReg'}}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col projects-title " style={{fontFamily:'SFProBold'}}>Projects</div>
-                    </div>
-                </div>
-                <div className="project-section" >
-                    <div className="row flex-column-reverse flex-md-row">
-                        <div  className="col-md-6  gif logo-box" style={{justifyContent:'center'}}>
-                            <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
-                        </div>
-                        <div  className="neo-shadow col-md-6  project-description" >
-                            <div className="project-type" >Web App</div>
-                            <div className="project-name"  style={{display: 'inline-block'}}> Price Watch</div>
-
-                            <div className="project-name"  style={{display: 'inline-block'}}>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/react.svg" data-toggle="tooltip" style={{width:'41px', height:'41px'}} title="react"/>
-                                </div>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/python.svg" data-toggle="tooltip" style={{width:'35px', height:'35px'}} title="Python"/>
-                                </div>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/mongodb.svg" data-toggle="tooltip" style={{width:'38px', height:'38px'}} title="mongoDB"/>
-                                </div>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/firebase.svg" data-toggle="tooltip" style={{width:'35px', height:'35px'}} title="firebase"/>
-                                </div>
-                            </div>
-
-                            <div className="row">
-                                <div className="col-md-1 col-lg-3 not-mobile">
-                                    <hr />
-                                </div>
-                                <div className="col-md-11 col-lg-7" style={{fontFamily:'SFProLight'}}>
-                                    <p style={{fontSize:'20px'}}>
-                                    Price Watch is a web application to track prices of products from Amazon. Using the frontend all prices can be monitored with it's changes over time. 
-                                    When the price of a product changes an email is sent to users who are monitoring the price of a product. 
-                                    </p>
-
-                                    <Button
-                                        className="btn-mtl"
-                                        style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black',  padding:'7px 30px 7px 30px', textTransform:'none', color:'white', outline:0}}
-                                        variant="contained"
-                                        color="primary"
-                                        href="https://github.com/AntonKanug/Price-Watch"
-                                        target="_blank"
-                                        endIcon={<GitHubIcon/>}>GITHUB</Button>
-                                    <Button
-                                        className="btn-mtl"
-                                        style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', marginLeft:'10px',  padding:'7px 23px 7px 23px',color:'white',outline:0}}
-                                        variant="contained"
-                                        color="primary"
-                                        href="https://pricewatch-antonk.web.app/"
-                                        target="_blank"
-                                        endIcon={<ArrowForwardIcon/>}>Project</Button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="project-section" >
-                    <div className="row">
-                        <div className="neo-shadow col-md-6 project-description">
-                            <div className="project-type">Web App</div>
-                            <div className="project-name"  style={{display: 'inline-block'}}> DevKit.</div>
-
-                            <div className="project-name"  style={{display: 'inline-block'}}>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/react.svg" data-toggle="tooltip" style={{width:'41px', height:'41px'}} title="react"/>
-                                </div>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/nodejs.svg" data-toggle="tooltip" style={{width:'45px', height:'405 x'}} title="nodejs"/>
-                                </div>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/mongodb.svg" data-toggle="tooltip" style={{width:'38px', height:'38px'}} title="mongoDB"/>
-                                </div>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/firebase.svg" data-toggle="tooltip" style={{width:'35px', height:'35px'}} title="firebase"/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-1 col-lg-3 not-mobile">
-                                    <hr />
-                                </div>
-                                <div className="col-md-11 col-lg-7" style={{fontFamily:'SFProLight'}}>
-                                    <p style={{fontSize:'20px'}}>
-                                    DevKit is a web application that helps software developers find the optimal software tools for their project. 
-                                    The project was created to limit the time spent on researching for a software tool. Users can recommend specific software tools by liking tools
-                                    or by adding new tools.
-                                    </p>
-                                    <Button
-                                        className="btn-mtl"
-                                        style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black',  padding:'7px 30px 7px 30px',color:'white',outline:0}}
-                                        variant="contained"
-                                        color="primary"
-                                        href="https://github.com/AntonKanug/DevKit"
-                                        target="_blank"
-                                        endIcon={<GitHubIcon/>}>GITHUB</Button>
-                                    <Button
-                                        className="btn-mtl"
-                                        style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', marginLeft:'10px',  padding:'7px 23px 7px 23px',color:'white',outline:0}}
-                                        variant="contained"
-                                        color="primary"
-                                        href="https://devkit-ce752.web.app/"
-                                        target="_blank"
-                                        endIcon={<ArrowForwardIcon/>}>Project</Button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div  className="col-md-6 gif logo-box">
-                        <img src="assets/DevKit.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
-                        </div>
-                        
-
-                    </div>
-                </div>
-
-                <div className="project-section third" >   
-                    <div className="row flex-column-reverse flex-md-row">
-                    <div  className="col-md-6  gif logo-box" style={{justifyContent:'center'}}>
-                            <img src="assets/PriceWatch.gif" className='talentboard-gif' alt="loading..." style={{marginLeft:'0px'}}/>
-                        </div>
-
-                        <div className="col-md-6 project-description neo-shadow">
-                            <div className="project-type">Robotics</div>
-                            <div className="project-name"  style={{display: 'inline-block'}}> Sumobot Comp</div>
-
-                            <div className="project-name"  style={{display: 'inline-block'}}>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/arduino.svg" data-toggle="tooltip" style={{width:'41px', height:'41px'}} title="arduino"/>
-                                </div>
-                                <div class="media-icon"  style={{display: 'inline-block'}}>
-                                    <img src="assets/inventor.svg" data-toggle="tooltip" style={{width:'35px', height:'35px'}} title="inventor"/>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-1 col-lg-3 not-mobile">
-                                    <hr />
-                                </div>
-                                <div className="col-md-11 col-lg-7" style={{fontFamily:'SFProLight'}}>
-                                    <p style={{fontSize:'20px'}}>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.<a href="https://github.com/AmarJ/NN">multi-layer perceptron</a>. 
-                                    </p>
-                                    <Button
-                                    
-                                        className="btn-mtl"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black',  padding:'7px 30px 7px 30px',color:'white',outline:0}}
-                                    variant="contained"
-                                    color="primary"
-                                    endIcon={<GitHubIcon/>}
-                                >GITHUB</Button>
-                                <Button
-                                     
-                                        className="btn-mtl"
-                                    style={{fontFamily:'SFProBold', fontWeight:'700',backgroundColor:'black', marginLeft:'10px', padding:'7px 23px 7px 23px',color:'white',outline:0}}
-                                    variant="contained"
-                                    color="primary"
-                                    endIcon={<ArrowForwardIcon/>}
-                                >Project</Button>
-                                </div>
-                            </div>
-                        </div>
-
-                       
-                    </div>
-                </div>
-                <MinProjects/>
+    return (
+      <div className="projects-wrapper" style={{ fontFamily: "SFProReg" }}>
+        <div className="container">
+          <div className="row">
+            <div
+              className="col projects-title "
+              style={{ fontFamily: "SFProBold" }}
+            >
+              Projects
             </div>
-        )
-    }
+          </div>
+        </div>
+
+        <div className="project-section">
+          <div className="row">
+            <div className="col-md-8" style={{ padding: "0 2.75rem 0" }}>
+              <div className="row">
+                <div className="watson-recruitment">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div style={{ padding: "3rem 0 0 3rem" }}>
+                        <h2>Watson Recruitment</h2>
+                        <p>Mapping the stories that matter the most to you </p>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <img
+                        src="assets/watson-img.png"
+                        style={{ width: "97%" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="col-md-6"
+                  style={{ padding: "2.6rem 1.5rem 0 0" }}
+                >
+                  <div className="price-watch">
+                    <div style={{ padding: "2rem 2rem 0 2rem" }}>
+                      <h2>Price Watch </h2>
+                      <p style={{ opacity: 1 }}>
+                        Track your favourite products from Amazon
+                      </p>
+                    </div>
+                    <img
+                      src="assets/pw-img.png"
+                      style={{
+                        width: "96%",
+                        position: "absolute",
+                        bottom: 0,
+                        padding: "1rem",
+                      }}
+                    />
+                  </div>
+                </div>
+                <div
+                  className="col-md-6"
+                  style={{ padding: "2.6rem 0 0 1.5rem" }}
+                >
+                  <div className="devkit">
+                    <h2 style={{ padding: "2rem 0 0 2rem" }}>DevKit</h2>
+                    <div className="row">
+                      <div className="col-md-9">
+                        <img
+                          src="assets/devkit-img.png"
+                          style={{
+                            width: "100%",
+                            objectFit: "contain",
+                            marginTop: "1.75rem",
+                            paddingLeft: "0.5rem",
+                          }}
+                        />
+                      </div>
+                      <div className="col-md-3">
+                        <p style={{ padding: "2rem 0 0 2rem" }}></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="tutorfy" style={{ marginTop: "3rem" }}>
+                    <h2 style={{ padding: "2rem 0 0 2rem" }}>Tutorfy</h2>
+                    <div className="row">
+                      <div className="col-md-5">
+                        <p style={{ padding: "2rem 0 0 2rem" }}></p>
+                      </div>
+                      <div className="col-md-7">
+                        <img
+                          src="assets/tutorfy-img.png"
+                          style={{
+                            width: "100%",
+                            objectFit: "contain",
+                            marginTop: "1.75rem",
+                            paddingRight: "0.4rem",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4" style={{ padding: "0 2rem 0 1.25rem" }}>
+              <div
+                className="pathify"
+                style={{ backgroundImage: "url(assets/pathify-img.png)" }}
+              >
+                <div>
+                  <div style={{ padding: "2rem 2rem 0 2rem" }}>
+                    <h2>Pathify</h2>
+                    <p>Mapping the stories that matter the most to you the most for you</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="sumobot" style={{ marginTop: "3rem" }}>
+                <h2 style={{ padding: "2rem 0 0 2rem" }}>
+                  SumoBot Competition
+                </h2>
+                <div className="row">
+                  <div className="col-md-7">
+                    <p style={{ padding: "2rem 0 0 2rem" }}></p>
+                  </div>
+                  <div className="col-md-5">
+                    <img
+                      src="assets/sumobot-img.png"
+                      style={{
+                        width: "120px",
+                        objectFit: "contain",
+                        marginTop: "3rem",
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* SUMO*/}
+            </div>
+          </div>
+        </div>
+
+        {/* <MinProjects /> */}
+      </div>
+    );
+  }
 }
 
-export default Projects
+export default Projects;
