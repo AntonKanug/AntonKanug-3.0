@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import "./Projects.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { withRouter } from "react-router-dom";
 import MinProjects from "./MinProjects";
 AOS.init();
 
 export class Projects extends Component {
+  nextPath(path) {
+    this.props.history.push(path);
+  }
+
   render() {
     var settings = {
       dots: true,
@@ -35,12 +37,24 @@ export class Projects extends Component {
           <div className="row">
             <div className="col-md-8" style={{ padding: "0 2.75rem 0" }}>
               <div className="row">
-                <div className="watson-recruitment">
+                <div
+                  className="watson-recruitment"
+                  onClick={() => this.nextPath("/projects/1")}
+                >
                   <div className="row">
                     <div className="col-md-6">
                       <div style={{ padding: "3rem 0 0 3rem" }}>
                         <h2>Watson Recruitment</h2>
                         <p>Mapping the stories that matter the most to you </p>
+
+                        <div className="shcs_cms-read-wrap">
+                          <div
+                            style={{ color: "white" }}
+                            className="shcs_cms-read-text"
+                          >
+                            Read More →
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -54,21 +68,25 @@ export class Projects extends Component {
 
                 <div
                   className="col-md-6"
-                  style={{ padding: "2.6rem 1.5rem 0 0" }}
+                  style={{ padding: "3.75rem 1.9rem 0 0" }}
                 >
-                  <div className="price-watch">
+                  <div
+                    className="price-watch"
+                    onClick={() => this.nextPath("/projects/3")}
+                  >
                     <div style={{ padding: "2rem 2rem 0 2rem" }}>
                       <h2>Price Watch </h2>
                       <p style={{ opacity: 1 }}>
                         Track your favourite products from Amazon
                       </p>
+                      <div className="shcs_cms-read-wrap">
+                        <div className="shcs_cms-read-text">Read More →</div>
+                      </div>
                     </div>
                     <img
                       src="assets/pw-img.png"
                       style={{
-                        width: "96%",
-                        position: "absolute",
-                        bottom: 0,
+                        objectFit: "contain",
                         padding: "1rem",
                       }}
                     />
@@ -76,10 +94,35 @@ export class Projects extends Component {
                 </div>
                 <div
                   className="col-md-6"
-                  style={{ padding: "2.6rem 0 0 1.5rem" }}
+                  style={{ padding: "3.8rem 0 0 1.75rem" }}
                 >
-                  <div className="devkit">
-                    <h2 style={{ padding: "2rem 0 0 2rem" }}>DevKit</h2>
+                  <div
+                    className="devkit"
+                    onClick={() => this.nextPath("/projects/4")}
+                  >
+                    <h2
+                      style={{
+                        padding: "2rem 0 0 2rem",
+                        display: "inline-block",
+                      }}
+                    >
+                      DevKit
+                    </h2>
+                    <div
+                      className="shcs_cms-read-wrap"
+                      style={{
+                        padding: "2rem 2rem 0",
+                        float: "right",
+                        display: "inline-block",
+                      }}
+                    >
+                      <div
+                        className="shcs_cms-read-text"
+                        style={{ color: "black" }}
+                      >
+                        Read More →
+                      </div>
+                    </div>
                     <div className="row">
                       <div className="col-md-9">
                         <img
@@ -92,17 +135,21 @@ export class Projects extends Component {
                           }}
                         />
                       </div>
-                      <div className="col-md-3">
-                        <p style={{ padding: "2rem 0 0 2rem" }}></p>
-                      </div>
+                      <div className="col-md-3"></div>
                     </div>
                   </div>
 
-                  <div className="tutorfy" style={{ marginTop: "3rem" }}>
-                    <h2 style={{ padding: "2rem 0 0 2rem" }}>Tutorfy</h2>
+                  <div
+                    className="tutorfy"
+                    onClick={() => this.nextPath("/projects/5")}
+                    style={{ marginTop: "3.7rem", padding: "2rem 0 0 2rem" }}
+                  >
+                    <h2>Tutorfy</h2>
                     <div className="row">
                       <div className="col-md-5">
-                        <p style={{ padding: "2rem 0 0 2rem" }}></p>
+                        <div className="shcs_cms-read-wrap">
+                          <div className="shcs_cms-read-text">Read More →</div>
+                        </div>
                       </div>
                       <div className="col-md-7">
                         <img
@@ -121,26 +168,41 @@ export class Projects extends Component {
               </div>
             </div>
 
-            <div className="col-md-4" style={{ padding: "0 2rem 0 1.25rem" }}>
+            <div
+              className="col-md-4"
+              style={{ padding: "0 1.675rem 0 1.85rem" }}
+            >
               <div
                 className="pathify"
                 style={{ backgroundImage: "url(assets/pathify-img.png)" }}
+                onClick={() => this.nextPath("/projects/2")}
               >
                 <div>
                   <div style={{ padding: "2rem 2rem 0 2rem" }}>
                     <h2>Pathify</h2>
-                    <p>Mapping the stories that matter the most to you the most for you</p>
+                    <p>
+                      Mapping the stories that matter the most to you the most
+                      for you
+                    </p>
+                    <div className="shcs_cms-read-wrap">
+                      <div className="shcs_cms-read-wrap">
+                        <div className="shcs_cms-read-text">Read More →</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div className="sumobot" style={{ marginTop: "3rem" }}>
-                <h2 style={{ padding: "2rem 0 0 2rem" }}>
-                  SumoBot Competition
-                </h2>
+              <div
+                className="sumobot"
+                style={{ marginTop: "3.75rem", padding: "2rem 0 0 2rem" }}
+                onClick={() => this.nextPath("/projects/6")}
+              >
+                <h2>SumoBot Competition</h2>
                 <div className="row">
                   <div className="col-md-7">
-                    <p style={{ padding: "2rem 0 0 2rem" }}></p>
+                    <div className="shcs_cms-read-wrap">
+                      <div className="shcs_cms-read-text">Read More →</div>
+                    </div>
                   </div>
                   <div className="col-md-5">
                     <img
@@ -154,7 +216,6 @@ export class Projects extends Component {
                   </div>
                 </div>
               </div>
-              {/* SUMO*/}
             </div>
           </div>
         </div>
@@ -165,4 +226,4 @@ export class Projects extends Component {
   }
 }
 
-export default Projects;
+export default withRouter(Projects);

@@ -28,7 +28,7 @@ const MobileMenu = (props) => {
 
 const Anchors = () => {
     const anchorsArr = ["Projects", "Experience", "About"];
-    return (anchorsArr.map(item => { return (<a key={item} href={`#${item}`}>{item}</a>) }));
+    return (anchorsArr.map(item => { return (<a key={item} href={`/#${item}`}>{item}</a>) }));
 }
 
 export class Navbar extends Component {

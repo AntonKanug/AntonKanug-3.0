@@ -12,7 +12,7 @@
 
 .project-section {
   min-height: 66vh;
-  max-width:1200px;
+  max-width: 1225px;
   margin: auto;
 }
 
@@ -182,7 +182,7 @@ hr {
 
 h2 {
   font-family: "SFProBold";
-  font-size: 1.6rem;
+  font-size: 1.65rem;
 }
 
 h3 {
@@ -202,15 +202,14 @@ p {
 }
 
 .watson-recruitment {
-  transition: transform .3s ease-out;
-  height: 20rem;
+  height: 22.5rem;
   width: 100%;
   color: white;
   background: #0F0F0F
 }
 
-.pathify{
-  height: 43.6rem;
+.pathify {
+  height: 48.75rem;
   width: 100%;
   color: white;
   background-repeat: no-repeat;
@@ -218,8 +217,8 @@ p {
 }
 
 
-.price-watch{
-  height: 45rem;
+.price-watch {
+  height: 48.75rem;
   width: 100%;
   color: white;
   background: #F0B33F;
@@ -227,34 +226,60 @@ p {
   flex-direction: column;
 }
 
-.devkit{
-  transition: transform .3s ease-out;
-  height: 21rem;
+.devkit {
+  height: 22.5rem;
   width: 100%;
   color: #3F3D56;
-  background:#E2E2E2;
+  background: #E2E2E2;
 }
 
-.tutorfy{
-  height: 21rem;
+.tutorfy {
+  height: 22.5rem;
   width: 100%;
   color: #5EA0FF;
-  background:#C5DAF8;
+  background: #C5DAF8;
 }
 
-.sumobot{
-  height: 21rem;
+.sumobot {
+  height: 22.5rem;
   width: 100%;
   color: #42464B;
-  background:#D4E3EF;
+  background: #D4E3EF;
 }
 
 
-.watson-recruitment:hover, .devkit:hover {
+.watson-recruitment,
+.pathify,
+.price-watch,
+.devkit,
+.tutorfy,
+.sumobot {
+  transition: transform .3s ease-out;
+}
+
+
+.shcs_cms-read-wrap {
+  padding-top: 15px;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.shcs_cms-read-text{
+  color: white;
+}
+
+.watson-recruitment:hover,
+.pathify:hover,
+.price-watch:hover,
+.devkit:hover,
+.tutorfy:hover,
+.sumobot:hover  {
   transform: translate(0, -15px);
   cursor: pointer;
-}
 
-img {
-  pointer-events: none;
+  .shcs_cms-read-wrap {
+    opacity: 1;
+    transform: translate(0, -15px);
+  }
+
 }
