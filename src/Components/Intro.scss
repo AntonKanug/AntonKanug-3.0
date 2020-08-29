@@ -1,108 +1,115 @@
+.main-wrapper {
+  width: 80.75%;
+  height: 92.5vh;
+  margin: 0 auto;
+}
 
-  
-  .main-wrapper {
-    width: 80.75%;
-    height: 92.5vh;
-    margin: 0 auto;
-  }
+.project-wrapper {
+  width: 80.75%;
+  height: 92.5vh;
+  margin: 0 auto;
+}
 
+@media (max-width:800px) {
   .project-wrapper {
-    width: 80.75%;
-    height: 92.5vh;
-    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.banner-content {
+  color: #3c3b48;
+  text-align: left;
+  margin-top: 4rem;
+  margin-bottom: 10px;
+  // background: blue;
+}
+
+.banner-content h1 {
+  font-size: 42px;
+  color: #3c3b48;
+  font-weight: 600;
+}
+
+.banner-content p {
+  font-size: 22px;
+  color: #3c3b48;
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .banner-content {
+    margin: 0px;
   }
 
-  @media (max-width:800px){
-    .project-wrapper {
-      width: 100%;
-    }
-  }
-  
-  .banner-content {
-    color: #3c3b48;
-    text-align: left;
-    margin-top: 4rem;
-    margin-bottom: 10px;
-    // background: blue;
-  }
-  
   .banner-content h1 {
-    font-size: 42px;
+    font-size: 28px;
     color: #3c3b48;
     font-weight: 600;
   }
-  
+
   .banner-content p {
-    font-size: 22px;
-    color: #3c3b48;
-    margin-top: 2rem;
-  }
-  
-  @media (max-width: 800px) {
-    .banner-content {
-      margin: 0px;
-    }
-  
-    .banner-content h1 {
-      font-size: 28px;
-      color: #3c3b48;
-      font-weight: 600;
-    }
-  
-    .banner-content p {
-      font-size: 18px;
-      margin-top: 1rem;
+    font-size: 18px;
+    margin-top: 1rem;
 
-    }
-  
-    .btn {
-      visibility: hidden;
-    }
-  
-    .me {
-      margin: 0px;
-    }
   }
 
-
-  @media (max-width:500px){
-    .main-wrapper {
-      width: 90%;
-    }
-
-    .project-wrapper{
-      width: 90%;
-    }
+  .btn {
+    visibility: hidden;
   }
-  
-  .mail-icon {
-    margin-left: 5px;
-  }
-  
+
   .me {
-    margin: 10%;
-    position: relative;
-    width: 80%;
+    margin: 0px;
   }
-  
-  .dark-blue {
-    color: #2855ff;
+}
+
+
+@media (max-width:500px) {
+  .main-wrapper {
+    width: 90%;
   }
-  
-  .dark-blue:hover {
-    background-color: #2855ff;
+
+  .project-wrapper {
+    width: 90%;
   }
-  
-  #main {
-    transition: margin-top 0.5s;
-  }
-  
-  b,
-  strong {
-    font-weight: bold !important;
-  }
-  
-  .cont{
-    box-shadow:   10px 10px 10px 0 rgba(0, 0, 0, 0.1),
-      -10px -10px 10px 0  rgba(255, 255, 255, 1 );
-  }
+}
+
+.mail-icon {
+  margin-left: 5px;
+}
+
+.me {
+  margin: 10%;
+  position: relative;
+  width: 80%;
+}
+
+.dark-blue {
+  color: #2855ff;
+}
+
+.dark-blue:hover {
+  background-color: #2855ff;
+}
+
+#main {
+  transition: margin-top 0.5s;
+}
+
+b,
+strong {
+  font-weight: bold !important;
+}
+
+.cont {
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.1),
+    -10px -10px 10px 0 rgba(255, 255, 255, 1);
+}
+
+
+.paragraph {
+  margin-bottom: 0px;
+  color: #8a989e;
+  font-size: 20px;
+  line-height: 1.8em;
+  font-weight: 400;
+}

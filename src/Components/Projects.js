@@ -1,9 +1,8 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import "./Projects.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { withRouter } from "react-router-dom";
-import MinProjects from "./MinProjects";
 AOS.init();
 
 export class Projects extends Component {
@@ -12,14 +11,6 @@ export class Projects extends Component {
   }
 
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
-
     return (
       <div className="projects-wrapper" style={{ fontFamily: "SFProReg" }}>
         <div className="container">
@@ -37,6 +28,7 @@ export class Projects extends Component {
           <div className="row">
             <div className="col-md-8" style={{ padding: "0 2.75rem 0" }}>
               <div className="row">
+                {/* WATSON RECRUITMENT */}
                 <div
                   className="watson-recruitment"
                   onClick={() => this.nextPath("/projects/1")}
@@ -66,6 +58,7 @@ export class Projects extends Component {
                   </div>
                 </div>
 
+                {/* PRICE WATCH */}
                 <div
                   className="col-md-6"
                   style={{ padding: "3.75rem 1.9rem 0 0" }}
@@ -92,10 +85,12 @@ export class Projects extends Component {
                     />
                   </div>
                 </div>
+
                 <div
                   className="col-md-6"
                   style={{ padding: "3.8rem 0 0 1.75rem" }}
                 >
+                  {/* DEVKIT */}
                   <div
                     className="devkit"
                     onClick={() => this.nextPath("/projects/4")}
@@ -138,7 +133,7 @@ export class Projects extends Component {
                       <div className="col-md-3"></div>
                     </div>
                   </div>
-
+                  {/* TUTORFY */}
                   <div
                     className="tutorfy"
                     onClick={() => this.nextPath("/projects/5")}
@@ -172,6 +167,7 @@ export class Projects extends Component {
               className="col-md-4"
               style={{ padding: "0 1.675rem 0 1.85rem" }}
             >
+              {/* PATHIFY */}
               <div
                 className="pathify"
                 style={{ backgroundImage: "url(assets/pathify-img.png)" }}
@@ -192,6 +188,7 @@ export class Projects extends Component {
                   </div>
                 </div>
               </div>
+              {/* SUMOBOT */}
               <div
                 className="sumobot"
                 style={{ marginTop: "3.75rem", padding: "2rem 0 0 2rem" }}
@@ -220,7 +217,6 @@ export class Projects extends Component {
           </div>
         </div>
 
-        {/* <MinProjects /> */}
       </div>
     );
   }

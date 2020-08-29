@@ -1,0 +1,129 @@
+.projects-wrapper {
+    margin: 0 auto;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 38px;
+    color: #3c3b48;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+
+.description-section {
+    min-height: 66vh;
+    max-width: 1225px;
+    margin: auto;
+    margin-top: 1rem;
+
+    
+
+    .text {
+        padding: 0 10rem 0 10rem
+    }
+
+    @media (max-width:1200px) {
+        .text {
+            padding: 0 2rem 0 2rem
+        }
+    }
+
+    @media (max-width:800px) {
+        .text {
+            padding: 0 1rem 0 1rem
+        }
+    }
+
+
+    h2 {
+        color: #485160;
+        font-size: 3.5rem;
+        font-family: "SFProSB";
+        margin-bottom: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+
+    }
+
+    h3 {
+        color: #8a989e;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        font-family: "SFProSB";
+        letter-spacing: 0.7px;
+
+    }
+
+    p {
+        color: #8d989c;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-family: "SFProReg";
+        letter-spacing: 0.7px;
+    }
+
+    .img {
+        width: 100%;
+        margin: 1rem 0 2.5rem 0;
+    }
+
+    .u_back {
+        margin-bottom: 60px;
+    }
+
+    .u_back {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-weight: 500;
+        font-family: Cerapro, sans-serif;
+        color: #0084ff;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+
+    .u_back-line {
+        height: 2px;
+        background-color: #0084ff;
+    }
+
+
+    .menu a {
+        position: relative;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 300;
+        color: #2855FF;
+        transition: color .2s ease;
+        padding: 3px 0;
+        margin-bottom: 3rem;
+        text-decoration: none;
+        font-family: "SFProSB";
+
+        &:hover {
+            cursor: pointer;
+
+            &::after,
+            &::before {
+                width: 100%;
+                left: 0;
+            }
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(90% + 0px);
+            width: 0;
+            right: 0;
+            height: 2px;
+        }
+
+        &::before {
+            transition: width .3s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+            background: #2855FF;
+        }
+    }
+}

@@ -36,6 +36,31 @@
 }
 
 
+@font-face {
+  font-family: CeraThin;
+  src: url(fonts/CeraPro-Thin.ttf);
+}
+@font-face {
+  font-family: CeraReg;
+  src: url(fonts/CeraPro-Regular.ttf);
+}
+@font-face {
+  font-family: CeraMed;
+  src: url(fonts/CeraPro-Medium.ttf);
+}
+@font-face {
+  font-family: CeraLight;
+  src: url(fonts/CeraPro-Light.ttf);
+}
+@font-face {
+  font-family: CeraBold;
+  src: url(fonts/CeraPro-Bold.ttf);
+}
+@font-face {
+  font-family: CeraBlack;
+  src: url(fonts/CeraPro-Black.ttf);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -58,10 +58,10 @@ export class Navbar extends Component {
                         <div className="col">
                             <div className="logo slide-in-blurred-top">
                                 <span className="full-name">
-                                    <h1 style={{fontFamily:'SFProBold', letterSpacing:'0.7px'}}>Anton Kanugalawattage</h1>
+                                    <h2 style={{fontFamily:'SFProBold', letterSpacing:'0.7px'}}>Anton Kanugalawattage</h2>
                                 </span>
                                 <span className="short-name" >
-                                    <h1 style={{fontFamily:'SFProBold', letterSpacing:'0.7px'}}>Anton K</h1>
+                                    <h2 style={{fontFamily:'SFProBold', letterSpacing:'0.7px'}}>Anton K</h2>
                                 </span>
                             </div>
                         </div>
