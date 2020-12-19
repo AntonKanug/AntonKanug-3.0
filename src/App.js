@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter , Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
 import Projects from "./Components/Projects";
@@ -8,7 +8,6 @@ import ProjectDescription from "./Components/ProjectDescription";
 import ScrollToTop from "./Components/ScrollToTop";
 import ScrollableAnchor from "react-scrollable-anchor";
 import LinearProgress from "@material-ui/core/LinearProgress";
-import YouTube from "react-youtube";
 
 import "./App.css";
 import "./index.css";
@@ -47,7 +46,7 @@ class App extends Component {
             <ScrollToTop>
               <Route
                 exact
-                path="/projects/:id"
+                path="/:project"
                 component={ProjectDescription}
               />
             </ScrollToTop>

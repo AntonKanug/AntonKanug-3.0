@@ -95,3 +95,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+p::selection {
+    background: #a8a8a8;
+    color: white;
+}
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -webkit-user-drag: none;
+
+}

@@ -31,7 +31,7 @@ export class Projects extends Component {
                 {/* WATSON RECRUITMENT */}
                 <div
                   className="watson-recruitment"
-                  onClick={() => this.nextPath("/projects/1")}
+                  onClick={() => this.nextPath("/watson-recruitment")}
                 >
                   <div className="row">
                     <div className="col-md-6">
@@ -65,7 +65,7 @@ export class Projects extends Component {
                 >
                   <div
                     className="price-watch"
-                    onClick={() => this.nextPath("/projects/3")}
+                    onClick={() => this.nextPath("/price-watch")}
                   >
                     <div style={{ padding: "2rem 2rem 0 2rem" }}>
                       <h2>Price Watch </h2>
@@ -93,7 +93,7 @@ export class Projects extends Component {
                   {/* DEVKIT */}
                   <div
                     className="devkit"
-                    onClick={() => this.nextPath("/projects/4")}
+                    onClick={() => this.nextPath("/devkit")}
                   >
                     <h2
                       style={{
@@ -136,7 +136,7 @@ export class Projects extends Component {
                   {/* TUTORFY */}
                   <div
                     className="tutorfy"
-                    onClick={() => this.nextPath("/projects/5")}
+                    onClick={() => this.nextPath("/tutorfy")}
                     style={{ marginTop: "3.7rem", padding: "2rem 0 0 2rem" }}
                   >
                     <h2>Tutorfy</h2>
@@ -171,7 +171,7 @@ export class Projects extends Component {
               <div
                 className="pathify"
                 style={{ backgroundImage: "url(assets/pathify-img.png)" }}
-                onClick={() => this.nextPath("/projects/2")}
+                onClick={() => this.nextPath("/pathify")}
               >
                 <div>
                   <div style={{ padding: "2rem 2rem 0 2rem" }}>
@@ -192,7 +192,7 @@ export class Projects extends Component {
               <div
                 className="sumobot"
                 style={{ marginTop: "3.75rem", padding: "2rem 0 0 2rem" }}
-                onClick={() => this.nextPath("/projects/6")}
+                onClick={() => this.nextPath("/sumobot")}
               >
                 <h2>SumoBot Competition</h2>
                 <div className="row">
