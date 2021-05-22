@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { BrowserRouter , Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
@@ -12,22 +12,42 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 import "./App.css";
 import "./index.css";
 
-const Sections = () => {
-  const anchors = ["About", "Projects"];
-  const sectionsArray = [<Intro />, <Projects />];
-  return anchors.map((item, index) => {
-    return (
-      <ScrollableAnchor id={item} key={index}>
-        <div>{sectionsArray[index]}</div>
-      </ScrollableAnchor>
-    );
-  });
-};
+
 
 class App extends Component {
   state = {
     open: "inherit",
+    width: 0,
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: "inherit",
+      width:window.innerWidth,
+    };
+
+  }
+
+  componentWillMount(){
+    window.addEventListener('resize', () => {
+    this.setState({width: window.innerWidth});
+    })
+  }
+
+   Sections = () => {
+    const anchors = ["About", "Projects"];
+    let sectionsArray = [<Intro />];
+    if (this.state.width > 1000) sectionsArray.push(<Projects />)
+    return anchors.map((item, index) => {
+      return (
+        <ScrollableAnchor id={item} key={index}>
+          <div>{sectionsArray[index]}</div>
+        </ScrollableAnchor>
+      );
+    });
+  };
+
 
   render() {
     setTimeout(() => {
@@ -42,7 +62,7 @@ class App extends Component {
         <div id="main" className="main-wrapper">
           <Navbar />
           <BrowserRouter>
-            <Route exact path="/" component={Sections} />
+            <Route exact path="/" component={this.Sections} />
             <ScrollToTop>
               <Route
                 exact

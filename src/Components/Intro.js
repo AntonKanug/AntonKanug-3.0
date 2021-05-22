@@ -28,8 +28,9 @@ export class Intro extends Component {
                             <span role="img" aria-label="Hand">👋</span> Hello!
                             </h1>
                             <p style={{fontFamily:'SFProLight', letterSpacing:'0.7px'}}>
-                            My name is <span style={{fontFamily:'SFProSB'}}>Anton Kanugalawattage </span>📚 💻 I'm a student at McMaster University studying Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.    
-                            <span style={{fontFamily:'SFProSB'}}> Software Engineering</span>.
+                            My name is <span style={{fontFamily:'SFProSB'}}>Anton Kanugalawattage</span>. 📚 💻 I'm a 3rd year<span style={{fontFamily:'SFProSB'}}> Software Engineering</span> student at McMaster University. 
+                            👨‍💻 Currently a <span style={{fontFamily:'SFProSB'}}>Software Developer Intern</span> at
+                              <span style={{fontFamily:'SFProSB'}}> IBM</span>.
                             </p>
                             </div>
                         </div>

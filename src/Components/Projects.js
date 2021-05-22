@@ -37,14 +37,14 @@ export class Projects extends Component {
                     <div className="col-md-6">
                       <div style={{ padding: "3rem 0 0 3rem" }}>
                         <h2>Watson Recruitment</h2>
-                        <p>Mapping the stories that matter the most to you </p>
-
+                        <p>An interview portal to avoid biases in the recruitment process by using various IBM Watson’s AI technologies.</p>
+                        <p>Won 3rd Place in IBM North American Intern Hackathon</p>
                         <div className="shcs_cms-read-wrap">
                           <div
                             style={{ color: "white" }}
                             className="shcs_cms-read-text"
                           >
-                            Read More →
+                            View Github →
                           </div>
                         </div>
                       </div>
@@ -70,10 +70,10 @@ export class Projects extends Component {
                     <div style={{ padding: "2rem 2rem 0 2rem" }}>
                       <h2>Price Watch </h2>
                       <p style={{ opacity: 1 }}>
-                        Track your favourite products from Amazon
+                      A web application that tracks the prices of items from Amazon
                       </p>
                       <div className="shcs_cms-read-wrap">
-                        <div className="shcs_cms-read-text">Read More →</div>
+                        <div className="shcs_cms-read-text">View Github →</div>
                       </div>
                     </div>
                     <img
@@ -113,7 +113,7 @@ export class Projects extends Component {
                     >
                       <div
                         className="shcs_cms-read-text"
-                        style={{ color: "black" }}
+                        style={{ color: "black", paddingTop:'0.5rem' }}
                       >
                         Read More →
                       </div>
@@ -143,7 +143,7 @@ export class Projects extends Component {
                     <div className="row">
                       <div className="col-md-5">
                         <div className="shcs_cms-read-wrap">
-                          <div className="shcs_cms-read-text">Read More →</div>
+                          <div className="shcs_cms-read-text" style={{color:'#3a89f8'}}>Read More →</div>
                         </div>
                       </div>
                       <div className="col-md-7">
@@ -177,12 +177,11 @@ export class Projects extends Component {
                   <div style={{ padding: "2rem 2rem 0 2rem" }}>
                     <h2>Pathify</h2>
                     <p>
-                      Mapping the stories that matter the most to you the most
-                      for you
+                    A web application that finds the shortest path between multiple destinations
                     </p>
                     <div className="shcs_cms-read-wrap">
                       <div className="shcs_cms-read-wrap">
-                        <div className="shcs_cms-read-text">Read More →</div>
+                        <div className="shcs_cms-read-text">View Github →</div>
                       </div>
                     </div>
                   </div>
@@ -196,12 +195,12 @@ export class Projects extends Component {
               >
                 <h2>SumoBot Competition</h2>
                 <div className="row">
-                  <div className="col-md-7">
+                  <div className="col-md-6">
                     <div className="shcs_cms-read-wrap">
-                      <div className="shcs_cms-read-text">Read More →</div>
+                      <div className="shcs_cms-read-text"   style={{ color: "#42464B"}}>Read More →</div>
                     </div>
                   </div>
-                  <div className="col-md-5">
+                  <div className="col-md-6">
                     <img
                       src="assets/sumobot-img.png"
                       style={{

@@ -24,7 +24,7 @@ class  SimpleSnackbar extends Component {
                 open={this.state.open}
                 >
                 <SnackbarContent style={{backgroundColor:'#f5f5f5',fontFamily:'Avenir, Nunito Sans, sans-serif', fontWeight:'900', fontSize: 16, color:'black'}}
-                message="Made By Anton Kanugalawattage, 2020"
+                message={"Made By Anton Kanugalawattage, " + new Date().getFullYear()}
                 />
             </Snackbar>
     </div>

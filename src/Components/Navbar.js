@@ -15,14 +15,11 @@ var MobileMenuStyle = {
 
 const MobileMenu = (props) => {
     return (
-        <div className="nav-menu" style={MobileMenuStyle}>
-            <a href="">
-                <div className="resume-link">
+      
+                <div >
                     View Resume <i className="fas fa-chevron-right"></i>
                 </div>
-            </a>
-            <Anchors />
-        </div>
+         
     );
 }
 
@@ -75,8 +72,11 @@ export class Navbar extends Component {
                                 <Anchors />
                             </div>
                             <div className="short-options">
-                                <i className={this.state.showButton ? "fas fa-bars menu-icon" : "fa fa-bars hidden"} onClick={this.clickedMenu} />
-                                <i className={!this.state.showButton ? "fas fa-times menu-icon" : "fa fa-times hidden"} onClick={this.clickedMenuClose} />
+                            <a href="" className="resume-link">
+                                    <div className="resume-options" style={{fontFamily:'SFProBold'}}>
+                                    📜 Resume<i style={{paddingLeft:'5px'}}class="fas fa-arrow-right"></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
