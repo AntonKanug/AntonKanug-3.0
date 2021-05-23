@@ -44,7 +44,7 @@ export class Projects extends Component {
                             style={{ color: "white" }}
                             className="shcs_cms-read-text"
                           >
-                            View Github →
+                            Read More →
                           </div>
                         </div>
                       </div>
@@ -73,7 +73,7 @@ export class Projects extends Component {
                       A web application that tracks the prices of items from Amazon
                       </p>
                       <div className="shcs_cms-read-wrap">
-                        <div className="shcs_cms-read-text">View Github →</div>
+                        <div className="shcs_cms-read-text">Read More →</div>
                       </div>
                     </div>
                     <img
@@ -181,7 +181,7 @@ export class Projects extends Component {
                     </p>
                     <div className="shcs_cms-read-wrap">
                       <div className="shcs_cms-read-wrap">
-                        <div className="shcs_cms-read-text">View Github →</div>
+                        <div className="shcs_cms-read-text">Read More →</div>
                       </div>
                     </div>
                   </div>

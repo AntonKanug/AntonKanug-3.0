@@ -24,13 +24,13 @@
     }
 
     @media (max-width:1200px) {
-        .text {
+        p, .text {
             padding: 0 2rem 0 2rem
         }
     }
 
     @media (max-width:800px) {
-        .text {
+        p, .text {
             padding: 0 1rem 0 1rem
         }
     }
@@ -55,6 +55,22 @@
 
     }
 
+    h4 {
+        color: #afb6b9;
+        font-size: 1rem;
+        font-family: "SFProReg";
+        letter-spacing: 0.7px;
+        margin: 0.25rem 0 2.5rem 0;
+        animation: cssAnimation1 0s 1s forwards;
+        visibility: hidden;
+    }
+
+    @keyframes cssAnimation1 {
+        to {
+            visibility: initial;
+        }
+    }
+
     p {
         color: #8d989c;
         font-size: 1.5rem;
@@ -66,7 +82,14 @@
 
     .img {
         width: 100%;
-        margin: 1rem 0 2.5rem 0;
+        margin: 1rem 0 0 0;
+        animation: cssAnimation2 0s 1s forwards;
+    }
+
+    @keyframes cssAnimation2 {
+        to {
+            border: #f1f1f1 solid 2.5px;
+        }
     }
 
     .u_back {

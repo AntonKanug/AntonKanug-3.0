@@ -26,20 +26,25 @@ export class ProjectDescription extends Component {
 
                         <h2>{project.title}</h2>
                         <h3>{project.subtitle}</h3>
-                    </div>
+                        {project.webiste?
+                        <a style={{ margin: "0rem", marginRight:'1rem' }} href={project.webiste} target="_blank">Application</a>
+                        : null}
+                        <a style={{ margin: "0rem" }} href={project.github} target="_blank">GitHub</a>
+                        </div>
 
                     {project.body?.map((item) => {
                         if (item.type === "text") return <p>{item.content}</p>;
                         if (item.type === "image")
-                            return <img className="img" src={item.content} />;
+                            return <><img className="img" src={item.content} /><h4>{item.alt}</h4></> ;
                     })}
-
+                    {project.youtube?
                     <iframe
+                        style={{border: "#dddddd solid 2.5px"}}
                         width="100%"
                         height="800px"
-                        src="https://www.youtube.com/embed/lS5pH5u_pTo?vq=hd1080"
+                        src={project.youtube}
                         allowFullScreen
-                    ></iframe>
+                    ></iframe>:null}
                 </div>
             </div>
         );

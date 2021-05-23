@@ -115,3 +115,9 @@ img {
   -webkit-user-drag: none;
 
 }
+
+.MuiSnackbarContent-message{
+  color: #485160;
+  font-family: "SFProSB";
+  letter-spacing: 0.4px;
+}
