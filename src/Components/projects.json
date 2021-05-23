@@ -2,47 +2,132 @@
     "watson-recruitment": {
         "title": "Watson Recruitment",
         "subtitle": "3rd Place - IBM NA Intern Hackathon 2020",
+        "github":"https://github.com/AntonKanug/Watson-Recruitment",
+        "youtube":"https://www.youtube.com/embed/lS5pH5u_pTo?vq=hd1080",
         "body": [
             {
                 "type": "text",
-                "content": "Snap can take you from the bustling streets of Istanbul, straight to the front row of Madison Square Garden, and across an ocean to Big Ben, all without leaving your seat.When Snap users post a story, they open up a window into their world.Mapbox helps make it easier to find those windows. "
+                "content": "A recruitment portal intended to eliminate racial discrimination and bias based on cultural backgrounds, and focus on skills to give equal employment opportunities. Built for IBM's NA Intern Hackathon 2020."
             },
             {
                 "type": "text",
-                "content": "Snap built Snap Map, a real-time heatmap of what’s happening, using Mapbox Maps SDKs for Mobile. Now, Snap users can search the globe to find the stories that matter to them."
+                "content": "Built using Angular, Node.js, Express, MongoDB, IBM Watson's Text to Speech, Speech to Text, Tone Analyzer & Personlity Insights."
             },
             {
                 "type": "image",
-                "content": "https://assets.website-files.com/5e871c608892778f95e77820/5e8f7ec9b29340d91ed9df22_5d54138201f72a0016007224_snap_img_1.png"
+                "content": "assets/watson-demo.gif",
+                "alt": "Watson Recruitment demo gif"
             },
             {
                 "type": "text",
-                "content": "Snap built Snap Map, a real-time heatmap of what’s happening, using Mapbox Maps SDKs for Mobile. Now, Snap users can search the globe to find the stories that matter to them."
-            },
-            {
-                "type": "text",
-                "content": "Snap can take you from the bustling streets of Istanbul, straight to the front row of Madison Square Garden, and across an ocean to Big Ben, all without leaving your seat.When Snap users post a story, they open up a window into their world.Mapbox helps make it easier to find those windows. "
+                "content": "As a result of the hackathon Watson Recruitment was moved forward to IBM's Call For Code for further development."
             }
         ]
     },
     "pathify": {
         "title": "Pathify",
-        "subtitle": "See the world on Snap "
+        "subtitle": "",
+        "github":"https://github.com/AntonKanug/Pathify",
+        "webiste":"https://pathify-map.web.app/",
+        "youtube":"https://www.youtube.com/embed/lE599IFsKck?rel=0&vq=hd1080",
+        "body": [
+            {
+                "type": "text",
+                "content": "A web application that finds the shortest path between multiple destinations using Dijkstra's algorithm on 100,000+ nodes for state of Colorado."
+            },
+            {
+                "type": "text",
+                "content": "Built using React, Java, Spring Boot, MapBox, React-Map-GL, Geocode, Heroku & Firebase."
+            }
+        ]
     },
     "price-watch": {
         "title": "Price Watch",
-        "subtitle": "See the world on Snap "
+        "subtitle": "",
+        "github":"https://github.com/AntonKanug/Price-Watch",
+        "webiste":"https://pricewatch-antonk.web.app/",
+        "youtube":"https://www.youtube.com/embed/Rg90KXl6X6Y?rel=0&vq=hd1080",
+        "body": [
+            {
+                "type": "text",
+                "content": "Price Watch is a web application to track prices of products from Amazon. Using the frontend all prices can be monitored with it's changes over time. When the price of a product changes an email is sent to user who are monitoring the price of a product."
+            },
+            {
+                "type": "text",
+                "content": "Built using React, Python, Flask, MongoDB, BeautifulSoup4, SMTP, Material, ApexCharts, Heroku & Firebase."
+            },
+            {
+                "type": "image",
+                "content": "assets/PriceWatch-White.gif",
+                "alt": "Price Watch demo gif"
+            },
+            {
+                "type": "image",
+                "content": "https://raw.githubusercontent.com/AntonKanug/Price-Watch-BE/master/assets/sample.png",
+                "alt": "Sample email when price changes"
+
+            }
+        ]
     },
     "devkit": {
-        "title": "Devkit",
-        "subtitle": "See the world on Snap "
+        "title": "DevKit",
+        "subtitle": "",
+        "github":"https://github.com/AntonKanug/DevKit",
+        "webiste":"https://devkit-ce752.web.app/",
+        "youtube":"",
+        "body": [
+            {
+                "type": "text",
+                "content": "Devkit is a web application that helps software developers find the optimal software tool such as APIs or libraries for their project. The project was created to limit the time spent on researching for a software tool. Devkit allows software developers to search for tools and filter the list based on their requirements for the project. Users can recommend specific software tools by clicking the thumbs up button, and other users can view which software tool other developers recommend."
+            },
+            {
+                "type": "text",
+                "content": "Built using React, Node.js, Express, MongoDB, Material-UI, Heroku & Firebase."
+            },
+            {
+                "type": "image",
+                "content": "assets/DevKit.gif",
+                "alt": "Devkit demo gif"
+            }
+        ]
     },
     "tutorfy": {
         "title": "Tutorfy",
-        "subtitle": "See the world on Snap "
+        "subtitle": "",
+        "github":"https://github.com/AntonKanug/Tutorfy",
+        "webiste":"https://tutorfy-dh6.web.app/",
+        "youtube":"",
+        "body": [
+            {
+                "type": "text",
+                "content": "On a day to day basis, university students face various challenges such as struggling difficult subjects and are on a tight budget due to student debt. We wanted to solve both problems in one app. Tutorfy makes it simple for students to find local tutors in a plethora of subjects that can help them secure that A+, and helps tutors to earn some extra cash."
+            },
+            {
+                "type": "text",
+                "content": "Built using React, Node.js, Express, MongoDB, Material-UI, SMTP, Heroku & Firebase."
+            },
+            {
+                "type": "image",
+                "content": "assets/tutorfy.png",
+                "alt": "Tutorfy home page"
+            }
+        ]
     },
     "sumobot": {
         "title": "Sumobot Competition",
-        "subtitle": "See the world on Snap "
+        "subtitle": "Placed top 16/80+",
+        "github":"https://github.com/AntonKanug/SumoBot2019",
+        "webiste":"",
+        "youtube":"",
+        "body": [
+            {
+                "type": "text",
+                "content": "Assembled an autonomous robot using Arduino & IR sensors for McMaster's 2019 Sumobot Competition."
+            },
+            {
+                "type": "text",
+                "content": "Built using Arduino, AutoCAD Inventor & 3D printing."
+            }
+        ]
     }
 }
