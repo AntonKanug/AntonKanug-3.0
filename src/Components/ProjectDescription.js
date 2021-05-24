@@ -27,9 +27,9 @@ export class ProjectDescription extends Component {
                         <h2>{project.title}</h2>
                         <h3>{project.subtitle}</h3>
                         {project.webiste?
-                        <a style={{ margin: "0rem", marginRight:'1rem' }} href={project.webiste} target="_blank">Application</a>
+                        <a style={{ margin: "0rem", marginRight:'1rem' }} href={project.webiste} target="_blank">Application ↗</a>
                         : null}
-                        <a style={{ margin: "0rem" }} href={project.github} target="_blank">GitHub</a>
+                        <a style={{ margin: "0rem" }} href={project.github} target="_blank">GitHub ↗</a>
                         </div>
 
                     {project.body?.map((item) => {
@@ -39,7 +39,7 @@ export class ProjectDescription extends Component {
                     })}
                     {project.youtube?
                     <iframe
-                        style={{border: "#dddddd solid 2.5px"}}
+                        style={{border: "#dddddd solid 2.5px", marginTop:'1rem'}}
                         width="100%"
                         height="800px"
                         src={project.youtube}
