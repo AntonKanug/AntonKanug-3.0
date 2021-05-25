@@ -62,19 +62,27 @@ export class Navbar extends Component {
                                 </span>
                             </div>
                         </div>
-                        <div className="col slide-in-blurred-right" style={{fontFamily:'SFProLight', fontSize:'18px'}}>
+                        <div className="slide-in-blurred-right" style={{fontFamily:'SFProLight', fontSize:'18px'}}>
                             <div className="full-options">  
-                                <a href="">
+                                
+                                <a href="" className="menu">
                                     <div className="resume-options" style={{fontFamily:'SFProBold'}}>
-                                    📜 View Resume<i style={{paddingLeft:'5px'}}class="fas fa-arrow-right"></i>
+                                    📋 View Resume<i style={{paddingLeft:'5px'}}class="fas fa-arrow-right"></i>
                                     </div>
                                 </a>
+            
+                                {/* <a className="menu" href="mailto:antondilon@gmail.com">
+                                    <div className="resume-options" style={{fontFamily:'SFProBold'}}>
+                                    📬
+                                        antondilon@gmail.com
+                                    </div>
+                                </a> */}
                                 <Anchors />
                             </div>
                             <div className="short-options">
-                            <a href="" className="resume-link">
+                            <a href="" className="resume-link menu">
                                     <div className="resume-options" style={{fontFamily:'SFProBold'}}>
-                                    📜 Resume<i style={{paddingLeft:'5px'}}class="fas fa-arrow-right"></i>
+                                    📋 Resume<i style={{paddingLeft:'5px'}}class="fas fa-arrow-right"></i>
                                     </div>
                                 </a>
                             </div>

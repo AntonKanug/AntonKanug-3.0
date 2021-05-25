@@ -42,6 +42,43 @@
 .full-options {
     margin-top: 10px;
     float: right;
+
+    .menu  {
+        position: relative;
+        display: inline-block;
+        font-weight: 300;
+        color: #2855FF;
+        transition: color .2s ease;
+        text-decoration: none;
+        font-family: "SFProSB";
+    
+        &:hover {
+            cursor: pointer;
+            color: #2855FF;
+    
+            &::after,
+            &::before {
+                width: 100%;
+                left: 0;
+            }
+        }
+    
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(90% + 5px);
+            width: 0;
+            right: 0;
+            height: 2px;
+        }
+    
+        &::before {
+            transition: width .3s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+            background: #2855FF;
+        }
+    }
+    
 }
 
 .full-options a {
@@ -63,7 +100,6 @@
 
 .resume-options:hover {
     cursor: pointer;
-    color: #4895F0;
     text-decoration: none;
 }
 
@@ -88,3 +124,4 @@
     color: #4895F0;
     text-decoration: none;
 }
+

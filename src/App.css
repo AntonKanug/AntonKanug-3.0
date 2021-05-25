@@ -102,10 +102,12 @@ h1::selection,
 h2::selection,
 h3::selection,
 h4::selection,
-p::selection {
+p::selection,
+a::selection {
     background: #a8a8a8;
     color: white;
 }
+
 img {
   user-select: none;
   -moz-user-select: none;
@@ -118,6 +120,6 @@ img {
 
 .MuiSnackbarContent-message{
   color: #485160;
-  font-family: "SFProSB";
+  font-family: "SFProBold";
   letter-spacing: 0.4px;
 }

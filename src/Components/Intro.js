@@ -21,7 +21,7 @@ export class Intro extends Component {
                  <div  id="main" className="main-wrapper">
             <div className="container"  style={{marginTop:'50px'}}>
                 <div className="row align-items-center">
-                    <div className="col-lg-6 col-sm-6 col-xs-6">
+                    <div className="col-lg-6 col-sm-12">
                         <div className="banner-content slide-in-blurred-left" >
                             <div>
                             <h1 style={{fontFamily:'SFProBold'}}>
@@ -64,8 +64,8 @@ export class Intro extends Component {
 
 
                     </div>
-                    <div className="col-lg-6 col-sm-6 col-xs-6 slide-in-blurred-bottom" >
-                        <img src="assets/img-landing.svg" className='me' alt="loading..." style={{paddingTop:'10px'}} />
+                    <div className="col-lg-6 col-sm-12 slide-in-blurred-bottom" >
+                        <img src="assets/img-landing-1.svg" className='me' alt="loading..." style={{paddingTop:'10px', margin:'0%', width:'100%'}} />
                     </div>
                 </div>
             </div>
