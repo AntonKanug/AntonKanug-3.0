@@ -31,11 +31,49 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147693507-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'UA-147693507-1');
+    // gtag('config', 'UA-147693507-1');
+    gtag('config', 'UA-147693507-1', {
+      'custom_map': {
+        'dimension1': 'isp',
+        'dimension2': 'org',
+        'dimension3': 'hostname'
+      }
+    });
+  </script>
+    <!-- Note: plugin scripts must be included after the tracking snippet. -->
+  <script src="https://ipmeta.io/plugin.js"></script>
+  <script>
+     provideGtagPlugin({
+        serviceProvider: 'dimension4',
+        networkDomain: 'dimension5',
+        networkType: 'dimension6',
+     });
+  </script>
+  <script>
+    var customDimensions = {};
+    var Http = new XMLHttpRequest();
+    var url = 'https://json.geoiplookup.io/';
+    Http.open("GET", url);
+    Http.send();
+
+    Http.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var response = JSON.parse(Http.responseText);
+        customDimensions = {
+          'isp': response.isp,
+          'org': response.org,
+          'hostname': response.hostname,
+          'non_interaction': true
+        };
+        gtag('event', 'sendCustomDimensions', customDimensions);
+        ga('set', 'dimension1', customDimensions.isp);
+      }
+    }
   </script>
 </head>
 
